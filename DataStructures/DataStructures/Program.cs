@@ -13,17 +13,17 @@ namespace DataStructures
             #region LinkedList Code
 
 
-            LinkedListAddToFirst();
+            SingleLinkedListAddToFirst();
             Console.WriteLine(@"///////////////////////////////////////////////////////");
-            LinkedListAddToLast();
+            SingleLinkedListAddToLast();
             Console.WriteLine(@"///////////////////////////////////////////////////////");
-            LinkedListRemoveFirst();
+            SingleLinkedListRemoveFirst();
             Console.WriteLine(@"///////////////////////////////////////////////////////");
-            LinkedListRemoveLast();
+            SingleLinkedListRemoveLast();
             Console.WriteLine(@"///////////////////////////////////////////////////////");
-            LinkedListContains();
+            SingleLinkedListContains();
             Console.WriteLine(@"///////////////////////////////////////////////////////");
-            LinkedListRemoveItem();
+            SingleLinkedListRemoveItem();
             Console.WriteLine(@"///////////////////////////////////////////////////////");
 
 
@@ -32,9 +32,9 @@ namespace DataStructures
             Console.ReadKey();
         }
 
-        private static void LinkedListAddToFirst()
+        private static void SingleLinkedListAddToFirst()
         {
-            Console.WriteLine("Method Name : " + "LinkedListAddToFirst");
+            Console.WriteLine("Method Name : " + "SingleLinkedListAddToFirst");
             CustomLinkedList<int> customLinkedList = new CustomLinkedList<int>();
             LinkedListNode<int> node1 = new LinkedListNode<int>(1);
             Console.WriteLine("Entering the first node and printing");
@@ -50,9 +50,9 @@ namespace DataStructures
             customLinkedList.PrintLinkedList();
             Console.WriteLine("No of item in he list is  : " + customLinkedList.Count);
         }
-        private static void LinkedListAddToLast()
+        private static void SingleLinkedListAddToLast()
         {
-            Console.WriteLine("Method Name : " + "LinkedListAddToLast");
+            Console.WriteLine("Method Name : " + "SingleLinkedListAddToLast");
             CustomLinkedList<int> customLinkedList = new CustomLinkedList<int>();
             LinkedListNode<int> node1 = new LinkedListNode<int>(1);
             Console.WriteLine("Entering the first node and printing");
@@ -69,9 +69,9 @@ namespace DataStructures
             Console.WriteLine("No of item in he list is  : " + customLinkedList.Count);
 
         }
-        private static void LinkedListRemoveFirst()
+        private static void SingleLinkedListRemoveFirst()
         {
-            Console.WriteLine("Method Name : " + "LinkedListRemoveFirst");
+            Console.WriteLine("Method Name : " + "SingleLinkedListRemoveFirst");
             CustomLinkedList<int> customLinkedList = new CustomLinkedList<int>();
             LinkedListNode<int> node1 = new LinkedListNode<int>(1);
             customLinkedList.AddToLast(node1);
@@ -90,9 +90,9 @@ namespace DataStructures
 
 
         }
-        private static void LinkedListRemoveLast()
+        private static void SingleLinkedListRemoveLast()
         {
-            Console.WriteLine("Method Name : " + "LinkedListRemoveLast");
+            Console.WriteLine("Method Name : " + "SingleLinkedListRemoveLast");
             CustomLinkedList<int> customLinkedList = new CustomLinkedList<int>();
             LinkedListNode<int> node1 = new LinkedListNode<int>(1);
             customLinkedList.AddToLast(node1);
@@ -131,9 +131,9 @@ namespace DataStructures
 
 
         }
-        private static void LinkedListContains()
+        private static void SingleLinkedListContains()
         {
-            Console.WriteLine("Method Name : " + "LinkedListContains");
+            Console.WriteLine("Method Name : " + "SingleLinkedListContains");
             CustomLinkedList<int> customLinkedList = new CustomLinkedList<int>();
             LinkedListNode<int> node1 = new LinkedListNode<int>(1);
             customLinkedList.AddToLast(node1);
@@ -152,9 +152,9 @@ namespace DataStructures
 
         }
 
-        private static void LinkedListRemoveItem()
+        private static void SingleLinkedListRemoveItem()
         {
-            Console.WriteLine("Method Name : " + "LinkedListRemoveItem");
+            Console.WriteLine("Method Name : " + "SingleLinkedListRemoveItem");
             CustomLinkedList<int> customLinkedList = new CustomLinkedList<int>();
             LinkedListNode<int> node1 = new LinkedListNode<int>(1);
             customLinkedList.AddToLast(node1);
