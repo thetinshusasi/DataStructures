@@ -11,27 +11,43 @@ namespace DataStructures
         static void Main(string[] args)
         {
             #region LinkedList Code
-
-
-            SingleLinkedListAddToFirst();
-            Console.WriteLine(@"///////////////////////////////////////////////////////");
-            SingleLinkedListAddToLast();
-            Console.WriteLine(@"///////////////////////////////////////////////////////");
-            SingleLinkedListRemoveFirst();
-            Console.WriteLine(@"///////////////////////////////////////////////////////");
-            SingleLinkedListRemoveLast();
-            Console.WriteLine(@"///////////////////////////////////////////////////////");
-            SingleLinkedListContains();
-            Console.WriteLine(@"///////////////////////////////////////////////////////");
-            SingleLinkedListRemoveItem();
-            Console.WriteLine(@"///////////////////////////////////////////////////////");
-
-
+            //Console.WriteLine("Single Linked List");
+            //SingleLinkedListAddToFirst();
+            //Console.WriteLine(@"///////////////////////////////////////////////////////");
+            //SingleLinkedListAddToLast();
+            //Console.WriteLine(@"///////////////////////////////////////////////////////");
+            //SingleLinkedListRemoveFirst();
+            //Console.WriteLine(@"///////////////////////////////////////////////////////");
+            //SingleLinkedListRemoveLast();
+            //Console.WriteLine(@"///////////////////////////////////////////////////////");
+            //SingleLinkedListContains();
+            //Console.WriteLine(@"///////////////////////////////////////////////////////");
+            //SingleLinkedListRemoveItem();
+            //Console.WriteLine(@"///////////////////////////////////////////////////////");
             #endregion LinkedList Code
+
+            #region Double LinkedList Code
+            Console.WriteLine("Double Linked List");
+            DoubleLinkedListAddToFirst();
+            Console.WriteLine(@"///////////////////////////////////////////////////////");
+            DoubleLinkedListAddToLast();
+            Console.WriteLine(@"///////////////////////////////////////////////////////");
+            DoubleLinkedListRemoveFirst();
+            Console.WriteLine(@"///////////////////////////////////////////////////////");
+            DoubleLinkedListRemoveLast();
+            Console.WriteLine(@"///////////////////////////////////////////////////////");
+            DoubleLinkedListContains();
+            Console.WriteLine(@"///////////////////////////////////////////////////////");
+            DoubleLinkedListRemoveItem();
+            Console.WriteLine(@"///////////////////////////////////////////////////////");
+
+            #endregion Double LinkedList Code
+
 
             Console.ReadKey();
         }
 
+        #region Single Linked List Static Cases Functions
         private static void SingleLinkedListAddToFirst()
         {
             Console.WriteLine("Method Name : " + "SingleLinkedListAddToFirst");
@@ -151,7 +167,6 @@ namespace DataStructures
 
 
         }
-
         private static void SingleLinkedListRemoveItem()
         {
             Console.WriteLine("Method Name : " + "SingleLinkedListRemoveItem");
@@ -180,5 +195,158 @@ namespace DataStructures
             customLinkedList.PrintLinkedList();
 
         }
+        #endregion Single Linked List Static Cases Functions
+
+
+
+        #region Double Linked List Static Cases Functions
+        private static void DoubleLinkedListAddToFirst()
+        {
+            Console.WriteLine("Method Name : " + "DoubleLinkedListAddToFirst");
+            CustomDoublyLinkedList<int> CustomDoublyLinkedList = new CustomDoublyLinkedList<int>();
+            DoublyLinkedListNode<int> node1 = new DoublyLinkedListNode<int>(1);
+            Console.WriteLine("Entering the first node and printing");
+            CustomDoublyLinkedList.AddToFirst(node1);
+            CustomDoublyLinkedList.PrintLinkedList();
+            Console.WriteLine("Entering multiple Nodes  and printing");
+            DoublyLinkedListNode<int> node2 = new DoublyLinkedListNode<int>(2);
+            CustomDoublyLinkedList.AddToFirst(node2);
+            DoublyLinkedListNode<int> node3 = new DoublyLinkedListNode<int>(3);
+            CustomDoublyLinkedList.AddToFirst(node3);
+            DoublyLinkedListNode<int> node4 = new DoublyLinkedListNode<int>(4);
+            CustomDoublyLinkedList.AddToFirst(node4);
+            CustomDoublyLinkedList.PrintLinkedList();
+            Console.WriteLine("No of item in he list is  : " + CustomDoublyLinkedList.Count);
+        }
+        private static void DoubleLinkedListAddToLast()
+        {
+            Console.WriteLine("Method Name : " + "DoubleLinkedListAddToLast");
+            CustomDoublyLinkedList<int> CustomDoublyLinkedList = new CustomDoublyLinkedList<int>();
+            DoublyLinkedListNode<int> node1 = new DoublyLinkedListNode<int>(1);
+            Console.WriteLine("Entering the first node and printing");
+            CustomDoublyLinkedList.AddToLast(node1);
+            CustomDoublyLinkedList.PrintLinkedList();
+            Console.WriteLine("Entering multiple Nodes  and printing");
+            DoublyLinkedListNode<int> node2 = new DoublyLinkedListNode<int>(2);
+            CustomDoublyLinkedList.AddToLast(node2);
+            DoublyLinkedListNode<int> node3 = new DoublyLinkedListNode<int>(3);
+            CustomDoublyLinkedList.AddToLast(node3);
+            DoublyLinkedListNode<int> node4 = new DoublyLinkedListNode<int>(4);
+            CustomDoublyLinkedList.AddToLast(node4);
+            CustomDoublyLinkedList.PrintLinkedList();
+            Console.WriteLine("No of item in he list is  : " + CustomDoublyLinkedList.Count);
+
+        }
+        private static void DoubleLinkedListRemoveFirst()
+        {
+            Console.WriteLine("Method Name : " + "DoubleLinkedListRemoveFirst");
+            CustomDoublyLinkedList<int> CustomDoublyLinkedList = new CustomDoublyLinkedList<int>();
+            DoublyLinkedListNode<int> node1 = new DoublyLinkedListNode<int>(1);
+            CustomDoublyLinkedList.AddToLast(node1);
+            DoublyLinkedListNode<int> node2 = new DoublyLinkedListNode<int>(2);
+            CustomDoublyLinkedList.AddToLast(node2);
+            DoublyLinkedListNode<int> node3 = new DoublyLinkedListNode<int>(3);
+            CustomDoublyLinkedList.AddToLast(node3);
+            DoublyLinkedListNode<int> node4 = new DoublyLinkedListNode<int>(4);
+            CustomDoublyLinkedList.AddToLast(node4);
+            CustomDoublyLinkedList.PrintLinkedList();
+            Console.WriteLine("No of item in he list is  : " + CustomDoublyLinkedList.Count);
+            Console.WriteLine("Removing first item from the list");
+            CustomDoublyLinkedList.RemoveFirst();
+            CustomDoublyLinkedList.PrintLinkedList();
+            Console.WriteLine("No of item in he list is  : " + CustomDoublyLinkedList.Count);
+
+
+        }
+        private static void DoubleLinkedListRemoveLast()
+        {
+            Console.WriteLine("Method Name : " + "DoubleLinkedListRemoveLast");
+            CustomDoublyLinkedList<int> CustomDoublyLinkedList = new CustomDoublyLinkedList<int>();
+            DoublyLinkedListNode<int> node1 = new DoublyLinkedListNode<int>(1);
+            CustomDoublyLinkedList.AddToLast(node1);
+            DoublyLinkedListNode<int> node2 = new DoublyLinkedListNode<int>(2);
+            CustomDoublyLinkedList.AddToLast(node2);
+            DoublyLinkedListNode<int> node3 = new DoublyLinkedListNode<int>(3);
+            CustomDoublyLinkedList.AddToLast(node3);
+            DoublyLinkedListNode<int> node4 = new DoublyLinkedListNode<int>(4);
+            CustomDoublyLinkedList.AddToLast(node4);
+            CustomDoublyLinkedList.PrintLinkedList();
+            Console.WriteLine("No of item in he list is  : " + CustomDoublyLinkedList.Count);
+            Console.WriteLine("Removing first item from the list");
+            CustomDoublyLinkedList.RemoveLast();
+            CustomDoublyLinkedList.PrintLinkedList();
+            Console.WriteLine("No of item in he list is  : " + CustomDoublyLinkedList.Count);
+
+            CustomDoublyLinkedList.RemoveLast();
+            CustomDoublyLinkedList.PrintLinkedList();
+            Console.WriteLine("No of item in he list is  : " + CustomDoublyLinkedList.Count);
+
+
+            CustomDoublyLinkedList.RemoveLast();
+            CustomDoublyLinkedList.PrintLinkedList();
+            Console.WriteLine("No of item in he list is  : " + CustomDoublyLinkedList.Count);
+
+
+            CustomDoublyLinkedList.RemoveLast();
+            CustomDoublyLinkedList.PrintLinkedList();
+            Console.WriteLine("No of item in he list is  : " + CustomDoublyLinkedList.Count);
+
+
+            CustomDoublyLinkedList.RemoveLast();
+            CustomDoublyLinkedList.PrintLinkedList();
+            Console.WriteLine("No of item in he list is  : " + CustomDoublyLinkedList.Count);
+
+
+
+        }
+        private static void DoubleLinkedListContains()
+        {
+            Console.WriteLine("Method Name : " + "DoubleLinkedListContains");
+            CustomDoublyLinkedList<int> CustomDoublyLinkedList = new CustomDoublyLinkedList<int>();
+            DoublyLinkedListNode<int> node1 = new DoublyLinkedListNode<int>(1);
+            CustomDoublyLinkedList.AddToLast(node1);
+            DoublyLinkedListNode<int> node2 = new DoublyLinkedListNode<int>(2);
+            CustomDoublyLinkedList.AddToLast(node2);
+            DoublyLinkedListNode<int> node3 = new DoublyLinkedListNode<int>(3);
+            CustomDoublyLinkedList.AddToLast(node3);
+            DoublyLinkedListNode<int> node4 = new DoublyLinkedListNode<int>(4);
+            CustomDoublyLinkedList.AddToLast(node4);
+            CustomDoublyLinkedList.PrintLinkedList();
+            Console.WriteLine("Does 1 exist in the list : " + CustomDoublyLinkedList.Contains(1));
+            Console.WriteLine("Does 10 exist in the list : " + CustomDoublyLinkedList.Contains(10));
+
+
+
+
+        }
+        private static void DoubleLinkedListRemoveItem()
+        {
+            Console.WriteLine("Method Name : " + "DoubleLinkedListRemoveItem");
+            CustomDoublyLinkedList<int> CustomDoublyLinkedList = new CustomDoublyLinkedList<int>();
+            DoublyLinkedListNode<int> node1 = new DoublyLinkedListNode<int>(1);
+            CustomDoublyLinkedList.AddToLast(node1);
+            DoublyLinkedListNode<int> node2 = new DoublyLinkedListNode<int>(2);
+            CustomDoublyLinkedList.AddToLast(node2);
+            DoublyLinkedListNode<int> node3 = new DoublyLinkedListNode<int>(3);
+            CustomDoublyLinkedList.AddToLast(node3);
+            DoublyLinkedListNode<int> node4 = new DoublyLinkedListNode<int>(4);
+            CustomDoublyLinkedList.AddToLast(node4);
+            CustomDoublyLinkedList.PrintLinkedList();
+            Console.WriteLine("Does 1 removed from the list : " + CustomDoublyLinkedList.Remove(1));
+            CustomDoublyLinkedList.PrintLinkedList();
+            Console.WriteLine("Does 10 removed from the list : " + CustomDoublyLinkedList.Remove(10));
+            CustomDoublyLinkedList.PrintLinkedList();
+            Console.WriteLine("Does 3 removed from the list : " + CustomDoublyLinkedList.Remove(3));
+            CustomDoublyLinkedList.PrintLinkedList();
+            DoublyLinkedListNode<int> node5 = new DoublyLinkedListNode<int>(5);
+            CustomDoublyLinkedList.AddToLast(node5);
+            DoublyLinkedListNode<int> node6 = new DoublyLinkedListNode<int>(6);
+            CustomDoublyLinkedList.AddToLast(node6);
+            CustomDoublyLinkedList.PrintLinkedList();
+            Console.WriteLine("Does 6 removed from the list : " + CustomDoublyLinkedList.Remove(6));
+            CustomDoublyLinkedList.PrintLinkedList();
+
+        }
+        #endregion Double Linked List Static Cases Functions
     }
 }

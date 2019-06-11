@@ -42,6 +42,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataStructures\LinkedList\CustomDoublyLinkedList.cs" />
+    <Compile Include="DataStructures\LinkedList\DoublyLinkedListNode.cs" />
     <Compile Include="DataStructures\LinkedList\CustomLinkedList.cs" />
     <Compile Include="DataStructures\LinkedList\LinkedListNode.cs" />
     <Compile Include="Program.cs" />
