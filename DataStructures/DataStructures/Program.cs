@@ -1,4 +1,5 @@
 ﻿using DataStructures.DataStructures.LinkedList;
+using DataStructures.DataStructures.Stack;
 using System;
 using System.Linq;
 using System.Text;
@@ -27,21 +28,31 @@ namespace DataStructures
             #endregion LinkedList Code
 
             #region Double LinkedList Code
-            Console.WriteLine("Double Linked List");
-            DoubleLinkedListAddToFirst();
-            Console.WriteLine(@"///////////////////////////////////////////////////////");
-            DoubleLinkedListAddToLast();
-            Console.WriteLine(@"///////////////////////////////////////////////////////");
-            DoubleLinkedListRemoveFirst();
-            Console.WriteLine(@"///////////////////////////////////////////////////////");
-            DoubleLinkedListRemoveLast();
-            Console.WriteLine(@"///////////////////////////////////////////////////////");
-            DoubleLinkedListContains();
-            Console.WriteLine(@"///////////////////////////////////////////////////////");
-            DoubleLinkedListRemoveItem();
-            Console.WriteLine(@"///////////////////////////////////////////////////////");
+            //Console.WriteLine("Double Linked List");
+            //DoubleLinkedListAddToFirst();
+            //Console.WriteLine(@"///////////////////////////////////////////////////////");
+            //DoubleLinkedListAddToLast();
+            //Console.WriteLine(@"///////////////////////////////////////////////////////");
+            //DoubleLinkedListRemoveFirst();
+            //Console.WriteLine(@"///////////////////////////////////////////////////////");
+            //DoubleLinkedListRemoveLast();
+            //Console.WriteLine(@"///////////////////////////////////////////////////////");
+            //DoubleLinkedListContains();
+            //Console.WriteLine(@"///////////////////////////////////////////////////////");
+            //DoubleLinkedListRemoveItem();
+            //Console.WriteLine(@"///////////////////////////////////////////////////////");
 
             #endregion Double LinkedList Code
+
+            #region Stack via LinkedList           
+
+            #endregion  Stack via LinkedList
+
+            #region PostFix            
+            Console.WriteLine("PostFix");
+            Console.WriteLine(CalculatePostfix()); 
+            Console.WriteLine(@"///////////////////////////////////////////////////////");
+            #endregion PostFix 
 
 
             Console.ReadKey();
@@ -348,5 +359,23 @@ namespace DataStructures
 
         }
         #endregion Double Linked List Static Cases Functions
+
+        #region Stack Linked List Static Cases Functions
+
+        /// Simple enough that its easy
+        #endregion Stack Linked List Static Cases Functions
+
+
+        #region Postfix Cal functions
+        private static int CalculatePostfix()
+        {
+            var expr = "52+";
+            var postfix = new PostfixCalculator();
+            var output = postfix.CalculatePostfix(expr);
+            return output;
+        }
+        #endregion Postfix Cal functions
+
+
     }
 }
