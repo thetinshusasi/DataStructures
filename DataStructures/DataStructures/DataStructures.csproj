@@ -42,10 +42,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataStructures\BinaryTree\BinarySearchTree.cs" />
+    <Compile Include="DataStructures\BinaryTree\BinaryTreeNode.cs" />
     <Compile Include="DataStructures\LinkedList\CustomDoublyLinkedList.cs" />
     <Compile Include="DataStructures\LinkedList\DoublyLinkedListNode.cs" />
     <Compile Include="DataStructures\LinkedList\CustomLinkedList.cs" />
     <Compile Include="DataStructures\LinkedList\LinkedListNode.cs" />
+    <Compile Include="DataStructures\Queue\CustomPriorityQueueViaLinkedList.cs" />
+    <Compile Include="DataStructures\Queue\CustomQueueViaArray.cs" />
+    <Compile Include="DataStructures\Queue\CustomQueueViaLinkedList.cs" />
     <Compile Include="DataStructures\Stack\CustomStackViaArray.cs" />
     <Compile Include="DataStructures\Stack\CustomStackViaLinkedList.cs" />
     <Compile Include="DataStructures\Stack\PostfixCalculator.cs" />
